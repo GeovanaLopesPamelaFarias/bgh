@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="pt-br"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="pt-br"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="pt-br"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt-br"> <!--<![endif]-->
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/opt/celepar/suporte-celepar/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/opt/celepar/suporte-celepar/css/style.css">
+		<title>Suporte Celepar</title>
+  	<script  type="text/javascript" src="/opt/celepar/suporte-celepar/js/jquery-2.1.4.js"></script>
+		<script src="/opt/celepar/suporte-celepar/js/bootstrap.min.js"></script>
+
+
+		<script>
+
+function abrir(URL) {
+
+
+window.open(URL,'janela', 'width=450, height=400 , top=99, left=99 , scrollbars=yes, status=no, toolbar=no, location=no, directories=no, menubar=no, resizable=no, fullscreen=no'
+	);
+
+	}
+
+	window.onload = function testes() {
+		var rede = document.getElementById("caborede").value;
+		if (rede == "connected" || rede == "conectado") {
+			caborede.style.color = "#000000";
+			caborede.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+			document.getElementById("caborede").value ="conectado";
+		} else {
+			caborede.style.color = "#000000";
+			caborede.style.background = "linear-gradient(to left, #ff0000, #e9caca)";
+			document.getElementById("caborede").value ="problema";
+		}
+
+		var supIp = document.getElementById("ipSup").value;
+		if (supIp == "" || supIp == "problema" ){
+			ipSup.style.color = "#000000";
+			ipSup.style.background = "linear-gradient(to left, #ff0000, #e9caca";
+			document.getElementById("ipSup").value ="problema";
+		} else {
+			ipSup.style.color = "#000000";
+			ipSup.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+		}
+
+		var supGw = document.getElementById("gwSup").value;
+		if (supGw == "" || supGw == "problema"){
+			gwSup.style.color = "#000000";
+			gwSup.style.background = "linear-gradient(to left, #ff0000, #e9caca)";
+			document.getElementById("gwSup").value ="problema";
+		} else {
+			gwSup.style.color = "#000000";
+			gwSup.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+		}
+
+		var supDns1 = document.getElementById("dns1Sup").value;
+		if (supDns1 == "" || supDns1 == "problema"){
+			dns1Sup.style.color = "#000000";
+			dns1Sup.style.background = "linear-gradient(to left, #ff0000, #e9caca)";
+			document.getElementById("dns1Sup").value ="problema";
+		} else {
+			dns1Sup.style.color = "#000000";
+			dns1Sup.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+		}
+
+		var supDns2 = document.getElementById("dns2Sup").value;
+		if (supDns2 == "" || supDns2 == "problema"){
+			dns2Sup.style.color = "#000000";
+			dns2Sup.style.background = "linear-gradient(to left, #ff0000, #e9caca)";
+			document.getElementById("dns2Sup").value ="problema";
+		} else {
+			dns2Sup.style.color = "#000000";
+			dns2Sup.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+		}
+
+
+		var proxy1 = document.getElementById("proxysup").value;
+		if (proxy1 == "SEM PROXY" || proxy1 == "problema") {
+			proxysup.style.color = "#000000";
+			proxysup.style.background = "linear-gradient(to left, #fffc00, #ebeab0)";
+		} else {
+			proxysup.style.color = "#000000";
+			proxysup.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+		}
+
+	var placa = document.getElementById("placarede").value;
+	if (placa == "funcionando") {
+		placarede.style.color = "#000000";
+		placarede.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+	} else {
+		placarede.style.color = "#000000";
+		placaede.style.background = "linear-gradient(to left, #ff0000, #e9caca)";
+	}
+
+	var testIp = document.getElementById("tIp").value;
+	if (testIp == "funcionando") {
+		tIp.style.color = "#000000";
+		tIp.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+	} else {
+		tIp.style.color = "#000000";
+		tIp.style.background = "linear-gradient(to left, #ff0000, #e9caca)";
+	}
+
+	var l = document.getElementById("lan").value;
+	if (l == "funcionando") {
+		lan.style.color = "#000000";
+		lan.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+	} else {
+		lan.style.color = "#000000";
+		lan.style.background = "linear-gradient(to left, #fffc00, #ebeab0)";
+		lan.value="Atenção";
+	}
+
+	var gw = document.getElementById("gateway").value;
+	if (gw == "funcionando") {
+		gateway.style.color = "#000000";
+		gateway.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+	} else {
+		gateway.style.color = "#000000";
+		gateway.style.background = "linear-gradient(to left, #ff0000, #e9caca)";
+	}
+
+	var d1 = document.getElementById("dns1").value;
+	if (d1 == "funcionando") {
+		dns1.style.color = "#000000";
+		dns1.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+	} else {
+		dns1.style.color = "#000000";
+		dns1.style.background = "linear-gradient(to left, #ff0000, #e9caca)";
+	}
+
+	var d2 = document.getElementById("dns2").value;
+	if (d2 == "funcionando") {
+		dns2.style.color = "#000000";
+		dns2.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+	} else {
+		dns2.style.color = "#000000";
+		dns2.style.background = "linear-gradient(to left, #ff0000, #e9caca)";
+	}
+
+	var tProxy = document.getElementById("proxy").value;
+	if (tProxy == "funcionando") {
+		proxy.style.color = "#000000";
+		proxy.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+	} else {
+		proxy.style.color = "#000000";
+		proxy.style.background = "linear-gradient(to left, #fffc00, #ebeab0)";
+		proxy.value="Atenção";
+	}
+
+	var intra = document.getElementById("intranet").value;
+	if (intra == "funcionando") {
+		intranet.style.color = "#000000";
+		intranet.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+	} else {
+		intranet.style.color = "#000000";
+		intranet.style.background = "linear-gradient(to left, #ff0000, #e9caca)";
+	}
+
+	var inter = document.getElementById("internet").value;
+	if (inter == "funcionando") {
+		internet.style.color = "#000000";
+		internet.style.background = "linear-gradient(to left, #00fb19, #d3ebd5)";
+	} else {
+		internet.style.color = "#000000";
+		internet.style.background = "linear-gradient(to left, #ff0000, #e9caca)";
+	}
+
+
+	};
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row"> <!-- Linha do Banner e do Titulo -->
+				<div class="col-md-12">
+					<div class="row" id="banner"> <!-- Linha do Banner -->
+						<img src="/opt/celepar/suporte-celepar/imagens/banner-celepar.jpg" id="imgBanner">
+					</div>
+					<div class="row" id="Ptitulo"> <!-- Linha do Titulo -->
+							<h2>Sistema de Suporte da CELEPAR</h2>
+							<p>Testes que irão auxiliar e dar mais agilidade nos atendimentos</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row"> <!-- Linha principal do contéudo -->
+						<div class="col-md-3 col-sm-12 col-xs-12">
+							<div class="row" id="Tinf"> <!-- Linha do título das informações do sistema -->
+								<h4>INFORMAÇÕES</h4>
+								<br>
+								<br>
+							</div>
+								<div class="row" id="inf"> <!-- Linha com os campos de informação do sistema -->
+									<div class="col-md-12 col-sm-6 col-xs-6"> <!-- Coluna das Informações do Sistema -->
+										<div class="row"> <!-- Linha do campo e botão de ajuda do cabo de rede -->
+											<div class="col-md-12 col-sm-6 col-xs-6" >
+											<span>Cabo de rede está:</span>
+										  <input type="text" readonly="true" class="inf" id="caborede" value="conectado"/>
+											<a data-toggle="modal" href="/opt/celepar/suporte-celepar/#ModalCaboRede" class="btn btn-primary btn-xs">Em caso de problemas clique aqui!</a>
+											</div>
+											 <div class="modal" id="ModalCaboRede">
+												<div class="modal-dialog">
+														 <div class="modal-content">
+															 <div class="modal-header">
+																 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+																 <h2 class="modal-title" id="tModal">Cabo de rede</h2>
+															 </div>	<!--	<br> -->
+															 <div class="modal-body">
+																 <div class="row" id="caboCertoErrado"> <!-- Linha com as imagens do cabo de rede certo/errado -->
+																 <p id="pModal">Verifique se as luzes da placa de rede estão acesas ou piscando</p>
+																 	 <br><br>
+																	 <div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-1 col-sm-offset-1 col-xs-offset-1"> <!-- coluna com a imgem do cabo errado -->
+																		<div class="row" id="CCertoErrado">
+																		<br>
+																		<img src="/opt/celepar/suporte-celepar/imagens/falso.png" id="imgVF" class="ImgModal" alt="imagem" title="Errado"/>
+																		<br><br>
+																		<figure>
+																			<img src="/opt/celepar/suporte-celepar/imagens/cabo-errado.jpg" id="imgCabo" class="ImgModal" alt="imagem" title="Rede Não Funcionando"/>
+																			<figcaption><p id="pLegenda">Rede Não Funcionando</p></figcaption>
+																		</figure>
+																		</div>
+																	 </div>
+																	 <div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-2 col-sm-offset-2 col-xs-offset-2" > <!-- coluna com a imgem do cabo certo -->
+																	 <div class="row" id="CCertoErrado">
+																		<br>
+																		<img src="/opt/celepar/suporte-celepar/imagens/verdadeiro.png" id="imgVF" class="ImgModal" alt="imagem" title="Correto"/>
+ 																		<br><br>
+																		<figure>
+																			<img src="/opt/celepar/suporte-celepar/imagens/cabo-certo.jpg" id="imgCabo" class="ImgModal" alt="imagem" title="Rede Funcionando"/>
+																			<figcaption><p id="pLegenda">Rede Funcionando</p></figcaption>
+																		</figure>
+																	 </div>
+																	 </div>
+																	</div>
+																	<br><br>
+																	<div class="row" id="gifCabo"> <!-- Linha com o gif do cabo de rede -->
+ 																 	 <div class="col-md-12 col-sm-12 col-xs-12">
+																		<figure>
+ 																			<img src="/opt/celepar/suporte-celepar/imagens/conecte-caborede.gif" id="imgCabo" class="ImgModal" alt="imagem" title="Conectando Cabo de Rede"/>
+																			<figcaption><p id="pLegenda">Conectando Cabo de Rede</p></figcaption>
+																		</figure>
+																	 </div>
+ 																	</div>
+															 </div>
+															 <div class="modal-footer">
+																 <a href="/opt/celepar/suporte-celepar/#" data-dismiss="modal" class="btn btn-primary">Fechar</a>
+															 </div>
+														 </div>
+													 </div>
+											 </div> <!-- Fim ajuda cabo de rede -->
+										</div>
+										<span>IP:</span>
+										<input type="text" readonly="true" class="inf" id="ipSup" value="10.143.145.230"/>
+										<div class="row"> <!-- Linha do campo e botão de ajuda do gateway -->
+										<div class="col-md-12 col-sm-6 col-xs-6" >
+										<span>Gateway:</span>
+										<input type="text" readonly="true" class="inf" id="gwSup" value="10.143.144.1"/>
+										<a data-toggle="modal" href="/opt/celepar/suporte-celepar/#ModalGateway" class="btn btn-primary btn-xs">Em caso de problemas clique aqui!</a>
+										</div>
+								  		<div class="modal" id="ModalGateway">
+											 <div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+																<h2 class="modal-title" id="tModal">Equipamento COPEL</h2>
+															</div>
+															<div class="modal-body">
+																 <p id="pModal">Verifique os LEDS do equipamento!</p>
+																 <figure>
+																 	<img src="/opt/celepar/suporte-celepar/imagens/edd-datacom.png" id="imgDatacom" class="ImgModal" alt="imagem" title="Conversor Novo"/>
+																	<figcaption><p id="pLegenda">Equipamento novo</p></figcaption>
+															 	 </figure>
+																 <figure>
+																 	<img src="/opt/celepar/suporte-celepar/imagens/conversor-midia.png" id="imgConversor" class="ImgModal" alt="imagem" title="Conversor Antigo"/>
+																	<figcaption><p id="pLegenda">Equipamento antigo</p></figcaption>
+															 	 </figure>
+															</div>
+															<div class="modal-footer">
+																<a href="/opt/celepar/suporte-celepar/#" data-dismiss="modal" class="btn btn-primary">Fechar</a>
+															</div>
+														</div>
+													</div>
+											</div> <!-- Fim ajuda gateway -->
+										</div>
+										<span>DNS1:</span>
+										<input type="text" readonly="true" class="inf" id="dns1Sup" value="10.175.252.102"/>
+										<span>DNS2:</span>
+										<input type="text" readonly="true" class="inf" id="dns2Sup" value="10.175.252.103"/>
+										<span>Proxy Configurado Firefox:</span>
+										<input type="text" readonly="true" class="inf" id="proxysup" value="SEM PROXY"/>
+									</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12 col-xs-12"> <!-- Coluna do resultado dos testes -->
+							<div class="row" id="Trel"> <!-- Linha do título dos testes -->
+								<h4>RELATÓRIO DOS TESTES</h4>
+								<h5>sexta, 23 de agosto de 2019 às 08:38</h5>
+							</div>
+							<div class="row" id="Result"> <!-- Linha com o resultado dos testes -->
+								<div class="col-md-6 col-sm-6 col-xs-6" id="rel1">
+									<span><strong>01</strong>-Placa de Rede:</span>
+									<input type="text" readonly="true" id="placarede" value="funcionando"/>
+									<span><strong>02</strong>-IP Configurado:</span>
+									<input type="text" readonly="true" id="tIp" value="testeip"/>
+									<div class="row"> <!-- Linha do campo e botão de ajuda MICROSLAN -->
+									<div class="col-md-12 col-sm-6 col-xs-6">
+										<span><strong>03</strong>-Computadores Próximos:</span>
+										<input type="text" readonly="true" id="lan" value="microslan"/>
+										<a data-toggle="modal" href="/opt/celepar/suporte-celepar/#ModalMicrosLan" class="btn btn-primary btn-xs">Em caso de problemas clique aqui!</a>
+									</div>
+									 <div class="modal" id="ModalMicrosLan">
+										<div class="modal-dialog">
+												 <div class="modal-content">
+													 <div class="modal-header">
+														 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+														 <h2 class="modal-title" id="tModal">Switch</h2>
+													 </div>
+													 <div class="modal-body">
+															<p id="pModal">Verifique o Switch!</p>
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-6">
+																<figure>
+																	<img src="/opt/celepar/suporte-celepar/imagens/hub-8P.png" id="imgHub" class="ImgModal" alt="imagem" title="Hub 8 portas"/>
+																	<figcaption><p id="pLegenda">Hub de 8 Portas</p></figcaption>
+																</figure>
+															</div>
+															<div class="col-md-6 col-sm-6 col-xs-6">
+																<figure>
+																	<img src="/opt/celepar/suporte-celepar/imagens/hub-switch-8P.png" id="imgHub" class="ImgModal" alt="imagem" title="Hub-Switch 8 portas"/>
+																	<figcaption><p id="pLegenda">Hub-Switch de 8 portas</p></figcaption>
+																</figure>
+															</div>
+															</div>
+															<br><br>
+															<div class="row">
+																<div class="col-md-12 col-sm-12 col-xs-12">
+																	<figure>
+																		<img src="/opt/celepar/suporte-celepar/imagens/switch.png" id="imgSwitch" class="ImgModal" alt="imagem" title="Switch 24 portas"/>
+																		<figcaption><p id="pLegenda">Switch de 24 portas</p></figcaption>
+																	</figure>
+																</div>
+															</div>
+													 </div>
+													 <div class="modal-footer">
+														 <a href="/opt/celepar/suporte-celepar/#" data-dismiss="modal" class="btn btn-primary">Fechar</a>
+													 </div>
+												 </div>
+											 </div>
+									 </div> <!-- Fim ajuda gateway -->
+									</div>
+									<span><strong>04</strong>-Gateway respondendo:</span>
+									<input type="text" readonly="true" id="gateway" value="testegw"/>
+ 									<span><strong>05</strong>-DNS1 respondendo:</span>
+									<input type="text" readonly="true" id="dns1" value="testedns1"/>
+									<span><strong>06</strong>-DNS2 respondendo:</span>
+									<input type="text" readonly="true" id="dns2" value="testedns2"/>
+									<br>
+								</div>
+								<div class="col-md-6 col-md-6 col-sm-6 col-xs-6" id="rel2"> <!-- Segunda Coluna de resultados -->
+									<span><strong>07</strong>-Proxy respondendo:</span>
+									<input type="text" readonly="true" id="proxy" value="testeproxy"/>
+									<span><strong>08</strong>-Intranet (portais do governo):</span>
+									<input type="text" readonly="true" id="intranet" value="testeintranet"/>
+									<span><strong>09</strong>-Internet (uol, terra, google):</span>
+									<input type="text" readonly="true" id="internet" value="testeinternet"/>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-12 col-xs-12"> <!-- Coluna com os canais de atendimento -->
+							<div class="row" id="TCatend"> <!-- Linha do título dos canais -->
+								<h4>CANAIS DE ATENDIMENTO</h4>
+							</div>
+							<div class="row" id="atend"> <!-- Linha do ícone da CAC -->
+							  <img src="/opt/celepar/suporte-celepar/imagens/cac-icone.jpg" alt="CAC" class="icone" title="Central de Atendimento">
+		          </div>
+		          <div class="row" id="atend"> <!-- Linha do ícone do Whatsapp celepar -->
+		            <img src="/opt/celepar/suporte-celepar/imagens/whatsapp.jpg" alt="Whatsapp" class="icone" title="WhatsApp Central de Atendimento">
+		          </div>
+  	      	</div>
+				</div>
+			</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row" id="Tfluxo">
+						<h4>FLUXOGRAMA BÁSICO COM O FUNCIONAMENTO DA REDE CORPORATIVA DO ESTADO</h4>
+					</div>
+					<div class="row" id="fluxo">
+						<figure>
+							<img src="/opt/celepar/suporte-celepar/imagens/fluxograma.png" alt="Fluxograma Rede" id="imgFluxo" title="Fluxograma Rede do Estado">
+							<figcaption>*Os números contidos no fluxograma correspondem aos testes realizados.</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer" class="container-fluid text-center"> <!-- Rodapé da página -->
+			<h4>Desenvolvido pela CELEPAR - Tecnologia de Informação e Comunicação do Paraná</h4>
+			<h4>Versão 26-05-17</h4>
+		</footer>
+	</body>
+</html>

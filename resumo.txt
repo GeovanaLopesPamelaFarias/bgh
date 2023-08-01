@@ -1,0 +1,9 @@
+Data: sexta, 23 de agosto de 2019 às 08:38
+Cabo de Rede está: conectado
+Seu IP: 10.143.145.230
+Seu Gateway: 10.143.144.1
+Dns1: 10.175.252.102
+Dns2: 10.175.252.103
+Proxy Configurado Firefox: SEM PROXY
+Uso do HD - sistema: 48%
+
